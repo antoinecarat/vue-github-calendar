@@ -1,13 +1,22 @@
 {
   "name": "vue-github-calendar",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "main": "dist/vue-github-calendar.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib --name vue-github-calendar src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
   },
